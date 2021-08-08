@@ -1,0 +1,418 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/5991df7afe.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="/js/script.js"></script>
+    <title>GTP inženjering</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navigation">
+        <img src="/img/gtpinž4.png" alt="GTP logo" class="navigation__logo" />
+        <ul class="navigation__list">
+          <li class="navigation__list__item">
+            <a href="#" class="navigation__link">Početna</a>
+          </li>
+          <li class="navigation__list__item">
+            <a href="#onama" class="navigation__link navigation__link__onama"
+              >O nama</a
+            >
+          </li>
+          <li class="navigation__list__item">
+            <a
+              href="#delatnost"
+              class="navigation__link navigation__link__delatnost"
+              >Delatnost</a
+            >
+          </li>
+          <li class="navigation__list__item">
+            <a href="/projekti/index.html" class="navigation__link">Projekti</a>
+          </li>
+          <li class="navigation__list__item">
+            <a href="/kontakt/index.html" class="navigation__link">Kontakt</a>
+          </li>
+        </ul>
+        <div class="navigation__menu__container__main">
+          <div class="navigation__menu navigation__hidden"></div>
+        </div>
+      </nav>
+
+      <div class="sidebar">
+        <ul class="sidebar__list">
+          <li class="sidebar__item invisible">
+            <a href="#" class="sidebar__link">Početna</a>
+          </li>
+          <li class="sidebar__item invisible">
+            <a href="/projekti/index.html" class="sidebar__link">Projekti</a>
+          </li>
+          <li class="sidebar__item invisible">
+            <a href="/kontakt/index.html" class="sidebar__link">Kontakt</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="slider-container">
+        <div class="left-slide">
+          <div class="left-slide__color left-slide__color--1">
+            <h1 id="h3" class="left-slide__h">Saborna crkva S. Karlovci</h1>
+            <p id="p3" class="left-slide__p">Restauracija</p>
+          </div>
+          <div class="left-slide__color left-slide__color--2">
+            <h1 id="h2" class="left-slide__h">Železnička stanica</h1>
+            <p id="p2" class="left-slide__p">Restauracija</p>
+          </div>
+          <div class="left-slide__color left-slide__color--3">
+            <h1 id="h1" class="left-slide__h">Belgrade Waterfront</h1>
+            <p id="p1" class="left-slide__p">
+              Vista, Parkview, Arcadia i Aurora
+            </p>
+          </div>
+          <div class="left-slide__color left-slide__color--4">
+            <h1 id="h0" class="left-slide__h">Palata pravde Kragujevac</h1>
+            <p id="p0" class="left-slide__p"></p>
+          </div>
+        </div>
+        <div class="right-slide">
+          <div class="right-slide__photo--1"></div>
+          <div class="right-slide__photo--2"></div>
+          <div class="right-slide__photo--3"></div>
+          <div class="right-slide__photo--4"></div>
+        </div>
+        <div class="action-buttons">
+          <button class="down-button">
+            <i class="fas fa-arrow-down"></i>
+          </button>
+          <button class="up-button">
+            <i class="fas fa-arrow-up"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="slider-small">
+        <div class="slide__small fade">
+          <div class="slide__small__number">1 / 4</div>
+          <img
+            src="/img/bw-main.jpg"
+            alt="Slika 1"
+            class="slide__small__photo"
+          />
+          <div class="slide__small__text">Belgrade Waterfront</div>
+        </div>
+        <div class="slide__small fade">
+          <div class="slide__small__number">2 / 4</div>
+          <img
+            src="/img/zeleznicka-glavna.jpg"
+            alt="Slika 2"
+            class="slide__small__photo"
+          />
+          <div class="slide__small__text">Zeleznicka stanica</div>
+        </div>
+        <div class="slide__small fade">
+          <div class="slide__small__number">3 / 4</div>
+          <img
+            src="/img/crkvask.jpg"
+            alt="Slika 3"
+            class="slide__small__photo"
+          />
+          <div class="slide__small__text">Saborna crkva Sremski Karlovci</div>
+        </div>
+        <div class="slide__small fade">
+          <div class="slide__small__number">4 / 4</div>
+          <img src="/img/sudkg.jpg" alt="Slika 4" class="slide__small__photo" />
+          <div class="slide__small__text">Palata pravde u Kragujevcu</div>
+        </div>
+
+        <a class="leftarrow" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="rightarrow" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+
+      <div style="text-align: center" class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+      </div>
+    </header>
+
+    <section class="delatnost sticky-nav-delatnost-margin" id="onama">
+      <h1 class="delatnost__naziv heading-1">
+        Građevinska firma - GTP Inženjering Beograd
+      </h1>
+      <h2 class="delatnost__radimo heading-2">
+        GRADNJA. RENOVIRANJE. ADAPTACIJA
+      </h2>
+      <p class="delatnost__para paragraph-1">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet
+        officiis, recusandae tenetur, voluptates illo impedit distinctio ullam
+        facere odit, iure fugiat molestiae vero. Dolores hic consequuntur
+        laudantium voluptates quam cum.Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Eveniet officiis, recusandae tenetur, voluptates illo
+        impedit distinctio ullam facere odit, iure fugiat molestiae vero.
+        Dolores hic consequuntur laudantium voluptates quam cum.Lorem ipsum,
+        dolor sit amet consectetur adipisicing elit.
+      </p>
+      <div class="sepparator"></div>
+      <div class="line saradnici__line"></div>
+
+      <div class="container" id="delatnost">
+        <div class="delatnost__container">
+          <div class="delatnost__container__item delatnost__container__item--1">
+            <svg class="delatnost__container__icon">
+              <use xlink:href="img/sprite.svg#icon-global"></use>
+            </svg>
+            <h3 class="heading-3 delatnost__naziv">Delatnost-1</h3>
+            <p class="delatnost__container__text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. In
+              dolore aperiam pariatur cumque, quod similique. In explicabo dicta
+            </p>
+          </div>
+          <div class="delatnost__container__item delatnost__container__item--2">
+            <svg class="delatnost__container__icon">
+              <use xlink:href="img/sprite.svg#icon-trophy"></use>
+            </svg>
+            <h3 class="heading-3 delatnost__naziv">Delatnost-2</h3>
+            <p class="delatnost__container__text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. In
+              dolore aperiam pariatur cumque, quod similique. In explicabo dicta
+            </p>
+          </div>
+          <div class="delatnost__container__item delatnost__container__item--3">
+            <svg class="delatnost__container__icon">
+              <use xlink:href="img/sprite.svg#icon-map-pin"></use>
+            </svg>
+            <h3 class="heading-3 delatnost__naziv">Delatnost-3</h3>
+            <p class="delatnost__container__text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. In
+              dolore aperiam pariatur cumque
+            </p>
+          </div>
+          <div class="delatnost__container__item delatnost__container__item--4">
+            <svg class="delatnost__container__icon">
+              <use xlink:href="img/sprite.svg#icon-key"></use>
+            </svg>
+            <h3 class="heading-3 delatnost__naziv">Delatnost-4</h3>
+            <p class="delatnost__container__text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. In
+              dolore aperiam pariatur cumque, quod similique. In explicabo dicta
+              molestiae
+            </p>
+          </div>
+          <div class="delatnost__container__item delatnost__container__item--5">
+            <svg class="delatnost__container__icon">
+              <use xlink:href="img/sprite.svg#icon-presentation"></use>
+            </svg>
+            <h3 class="heading-3 delatnost__naziv">Delatnost-5</h3>
+            <p class="delatnost__container__text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. In
+              dolore aperiam pariatur cumque, quod explicabo dicta molestiae
+              vero
+            </p>
+          </div>
+          <div class="delatnost__container__item delatnost__container__item--6">
+            <svg class="delatnost__container__icon">
+              <use xlink:href="img/sprite.svg#icon-lock"></use>
+            </svg>
+            <h3 class="heading-3 delatnost__naziv">Delatnost-6</h3>
+            <p class="delatnost__container__text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. In
+              dolore aperiam pariatur cumque, quod similique. In explicabo dicta
+              molestiae vero
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="sepparator"></div>
+    <div class="line saradnici__line"></div>
+
+    <section class="saradnici">
+      <div class="saradnici__left">
+        <h1 class="heading-2 saradnici__heading">NAŠI SARADNICI</h1>
+      </div>
+      <div class="saradnici__right">
+        <div class="saradnici__slider">
+          <a href="https://www.strabag.com/">
+            <img
+              src="/img/strabag.png"
+              alt="Strabag logo"
+              class="saradnici__logo saradnici__logo--strabag"
+          /></a>
+          <a href="https://www.kopra.rs">
+            <img
+              src="/img/kopra.png"
+              alt="Kopra logo"
+              class="saradnici__logo saradnici__logo--kopra"
+          /></a>
+          <a href="https://www.maximapaints.com/sr/pocetna">
+            <img
+              src="/img/maxima.png"
+              alt="Maxima logo"
+              class="saradnici__logo saradnici__logo--maxima"
+          /></a>
+          <a href="http://www.knauf.rs/">
+            <img src="/img/knauf.png" alt="Knauf logo" class="saradnici__logo"
+          /></a>
+          <a href="https://www.knaufinsulation.rs/">
+            <img
+              src="/img/knaufins.png"
+              alt="Knauf insulation logo"
+              class="saradnici__logo"
+          /></a>
+          <a href="https://www.roefix.rs/">
+            <img src="/img/rofix.png" alt="Rofix logo" class="saradnici__logo"
+          /></a>
+
+          <a href="http://archive.fibran.si/frontend/index.php?chlang=SR">
+            <img
+              src="/img/fibran.png"
+              alt="Fibran logo"
+              class="saradnici__logo"
+          /></a>
+        </div>
+        <!-- <div class="action-buttons saradnici__action-buttons">
+          <button class="left-button saradnici__left-button">
+            <i class="fas fa-arrow-left"></i>
+          </button>
+          <button class="right-button saradnici__right-button">
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </div> -->
+      </div>
+    </section>
+
+    <div class="line saradnici__line"></div>
+    <div class="sepparator"></div>
+    <section class="gallery">
+      <figure class="gallery__item gallery__item--1">
+        <img
+          src="/projekti/img/hotel-indigo-5.jpg"
+          alt="Gallery image 1"
+          class="gallery__img"
+        />
+      </figure>
+
+      <figure class="gallery__item gallery__item--2">
+        <img
+          src="/projekti/img/zeleznicka-19.jpg"
+          alt="Gallery image 2"
+          class="gallery__img"
+        />
+      </figure>
+
+      <figure class="gallery__item gallery__item--3">
+        <img
+          src="/projekti/img/zeleznicka-16.jpg"
+          alt="Gallery image 3"
+          class="gallery__img"
+        />
+      </figure>
+
+      <figure class="gallery__item gallery__item--4">
+        <img
+          src="/projekti/img/crkva-sk-9.jpg"
+          alt="Gallery image 4"
+          class="gallery__img"
+        />
+      </figure>
+
+      <figure class="gallery__item gallery__item--5">
+        <img
+          src="/projekti/img/zeleznicka-12.jpg"
+          alt="Gallery image 5"
+          class="gallery__img"
+        />
+      </figure>
+
+      <figure class="gallery__item gallery__item--6">
+        <img
+          src="/projekti/img/vista2.jpg"
+          alt="Gallery image 6"
+          class="gallery__img"
+        />
+      </figure>
+
+      <figure class="gallery__item gallery__item--7">
+        <img
+          src="/projekti/img/bgwfgal.jpg"
+          alt="Gallery image 7"
+          class="gallery__img"
+        />
+      </figure>
+
+      <figure class="gallery__item gallery__item--8">
+        <img
+          src="/projekti/img/bw-parkview-vista-1.jpg"
+          alt="Gallery image 8"
+          class="gallery__img"
+        />
+      </figure>
+
+      <figure class="gallery__item gallery__item--9">
+        <img
+          src="/projekti/img/bw-arcadia-6.jpg"
+          alt="Gallery image 9"
+          class="gallery__img"
+        />
+      </figure>
+
+      <figure class="gallery__item gallery__item--10">
+        <img
+          src="/projekti/img/dvor.jpg"
+          alt="Gallery image 10"
+          class="gallery__img"
+        />
+      </figure>
+
+      <figure class="gallery__item gallery__item--11">
+        <img
+          src="/projekti/img/bwvista.jpg"
+          alt="Gallery image 11"
+          class="gallery__img"
+        />
+      </figure>
+
+      <figure class="gallery__item gallery__item--12">
+        <img
+          src="/projekti/img/hotel-indigo-7.jpg"
+          alt="Gallery image 12"
+          class="gallery__img"
+        />
+      </figure>
+
+      <figure class="gallery__item gallery__item--13">
+        <img
+          src="/projekti/img/zeleznicka-15.jpg"
+          alt="Gallery image 13"
+          class="gallery__img"
+        />
+      </figure>
+
+      <figure class="gallery__item gallery__item--14">
+        <img
+          src="/projekti/img/bw-parkview-5.jpg"
+          alt="Gallery image 14"
+          class="gallery__img"
+        />
+      </figure>
+    </section>
+
+    <footer class="footer">
+      <div class="line"></div>
+      <p>&copy; 2021 by Dino Sijarić. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

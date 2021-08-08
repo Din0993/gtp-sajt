@@ -1,0 +1,122 @@
+// BORDER ANIMATION
+
+@mixin magic-border($width, $color, $duration, $direction) {
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    width: calc(100% + #{$width * 2});
+    height: calc(100% + #{$width * 2});
+    top: calc(#{$width}/ -1);
+    left: calc(#{$width}/ -1);
+    background: linear-gradient(to right, $color 0%, $color 100%),
+      linear-gradient(to top, $color 50%, transparent 50%),
+      linear-gradient(to top, $color 50%, transparent 50%),
+      linear-gradient(to right, $color 0%, $color 100%),
+      linear-gradient(to left, $color 0%, $color 100%);
+    background-size: 100% $width, $width 200%, $width 200%, 0% $width, 0% $width;
+    background-position: 50% 100%, 0% 0%, 100% 0%, 100% 0%, 0% 0%;
+    background-repeat: no-repeat, no-repeat;
+    transition: transform $duration ease-in-out,
+      background-position $duration ease-in-out,
+      background-size $duration ease-in-out;
+    transform: scaleX(0) rotate(180deg * $direction);
+    transition-delay: $duration * 2, $duration, 0s;
+  }
+  &:hover {
+    &:before {
+      background-size: 200% $width, $width 400%, $width 400%, 55% $width,
+        55% $width;
+      background-position: 50% 100%, 0% 100%, 100% 100%, 100% 0%, 0% 0%;
+      transform: scaleX(1) rotate(180deg * $direction);
+      transition-delay: 0s, $duration, $duration * 2;
+    }
+  }
+}
+
+.container {
+  display: grid;
+  grid-template-columns:
+    minmax(3rem, 1fr) repeat(8, minmax(min-content, 13rem))
+    minmax(3rem, 1fr);
+}
+
+.delatnost {
+  background-color: $color-grey-light-1;
+  padding-bottom: 2rem;
+  @media only screen and (max-width: 830px) {
+    margin-top: -10rem;
+  }
+  &__container {
+    grid-column: 2/10;
+    margin: 7rem 0;
+    display: grid;
+    gap: 6rem;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    margin-top: 15rem;
+    &__item {
+      @include magic-border(4px, rgb(209, 0, 0), 0.3s, 1);
+      padding-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(46, 37, 0, 0.123);
+      transition: all 0.3s;
+      border: 1px solid black;
+      // &:hover {
+      //   transform: translateY(-10px);
+      //   box-shadow: 0 17px 48px 0 rgba(0, 0, 0, 0.42);
+      // }
+    }
+
+    &__icon {
+      align-self: center;
+      width: 4.5rem;
+      height: 4.5rem;
+      transition: all 0.4s;
+    }
+    &__text {
+      margin-top: 1.5rem;
+      text-align: center;
+      font-size: 1.6rem;
+      padding-bottom: 3rem;
+    }
+  }
+  &__naziv {
+    padding-top: 3rem;
+    text-align: center;
+    transition: all 0.4s;
+  }
+  &__para {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    text-align: center;
+    width: 50%;
+    margin-bottom: 10rem;
+  }
+  &__radimo {
+    text-align: center;
+  }
+
+  &__line {
+    margin-top: 0;
+    background-color: $font-color-effects-3;
+  }
+}
+
+.delatnost__container__item:hover > .delatnost__naziv {
+  color: $font-color-effects-2;
+}
+
+.delatnost__container__item:hover > .delatnost__container__icon {
+  fill: $font-color-effects-3;
+}
+
+.sticky-nav-delatnost-margin {
+  margin-top: 22rem;
+  @media only screen and (max-width: 830px) {
+    margin-top: 8rem;
+  }
+}

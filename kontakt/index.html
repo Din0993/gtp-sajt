@@ -1,0 +1,112 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/5991df7afe.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="/projekti/script.js"></script>
+    <title>GTP inženjering</title>
+  </head>
+  <body>
+    <nav class="navigation">
+      <img
+        src="/img/gtpinž4.png"
+        alt="GTP logo"
+        class="navigation__logo__kontakt"
+      />
+      <ul class="navigation__list__kontakt">
+        <li class="navigation__list__item">
+          <a href="/index.html" class="navigation__link">Početna</a>
+        </li>
+
+        <li class="navigation__list__item">
+          <a href="/projekti/index.html" class="navigation__link">Projekti</a>
+        </li>
+
+        <li class="navigation__list__item">
+          <a href="/kontakt/index.html" class="navigation__link">Kontakt</a>
+        </li>
+      </ul>
+      <div class="navigation__menu__container">
+        <div class="navigation__menu__kontakt"></div>
+      </div>
+    </nav>
+
+    <div class="sidebar">
+      <ul class="sidebar__list">
+        <li class="sidebar__item">
+          <a href="/index.html" class="sidebar__link">Početna</a>
+        </li>
+        <li class="sidebar__item">
+          <a href="/projekti/index.html" class="sidebar__link">Projekti</a>
+        </li>
+        <li class="sidebar__item">
+          <a href="/kontakt/index.html" class="sidebar__link">Kontakt</a>
+        </li>
+      </ul>
+    </div>
+
+    <section class="kontakt">
+      <div class="mapouter">
+        <div class="gmap_canvas">
+          <iframe
+            width="100%"
+            height="100%"
+            id="gmap_canvas"
+            src="https://maps.google.com/maps?q=belgrade,hercegovacka%2019&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+          ></iframe>
+        </div>
+      </div>
+
+      <div class="kontakt__right">
+        <h3 class="heading-3 kontakt__heading">Kontakt</h3>
+        <div class="kontakt__container">
+          <div class="kontakt__telefon">
+            <svg class="kontakt__icon">
+              <use xlink:href="sprite.svg#icon-old-mobile"></use>
+            </svg>
+            <h3 class="heading-3">Telefon</h3>
+            <p class="kontakt__paragraph">+381 63 00 00 00</p>
+          </div>
+          <div class="kontakt__email">
+            <svg class="kontakt__icon">
+              <use xlink:href="sprite.svg#icon-mail2"></use>
+            </svg>
+            <h3 class="heading-3">E-mail</h3>
+            <p class="kontakt__paragraph">email@gmail.com</p>
+          </div>
+          <div class="kontakt__adresa">
+            <svg class="kontakt__icon">
+              <use xlink:href="sprite.svg#icon-location2"></use>
+            </svg>
+            <h3 class="heading-3">Adresa</h3>
+            <p class="kontakt__paragraph">
+              Adresa adresa 111, Beograd, Palilula
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="line"></div>
+      <p>&copy; 2021 by Dino Sijarić. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

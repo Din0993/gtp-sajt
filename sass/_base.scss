@@ -1,0 +1,58 @@
+// COLOR VARIABLES
+
+$color-primary: #f8f8f8;
+
+$color-grey-light-1: #e9ecef;
+$color-grey-light-2: #dee2e6;
+$color-grey-light-3: #ced4da;
+$color-grey-light-4: #adb5bd;
+
+$color-secondary: #212529;
+
+$color-dark-grey-1: #343a40;
+$color-dark-grey-2: #495057;
+$color-dark-grey-3: #6c757d;
+
+// FONT COLORS HOVER AND EFFECTS
+$font-color-effects-1: #660708;
+$font-color-effects-2: #a4161a;
+$font-color-effects-3: #ba181b;
+$font-color-effects-4: #e5383b;
+
+// FONT VARIABLES
+$font-primary: "Nunito", sans-serif;
+
+::selection {
+  background: $font-color-effects-3;
+  color: $color-primary;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.25%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $color-grey-light-1;
+  font-family: $font-primary;
+  color: black;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.sepparator {
+  padding: 3rem 0;
+  background-color: $color-grey-light-1;
+}

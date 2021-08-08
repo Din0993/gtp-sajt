@@ -1,0 +1,139 @@
+.kontakt {
+  display: flex;
+  height: 74rem;
+  width: 100%;
+
+  @media only screen and (max-width: 1500px) {
+    height: 120rem;
+  }
+  @media only screen and (max-width: 980px) {
+    height: 118rem;
+  }
+
+  @media only screen and (max-width: 800px) {
+    flex-direction: column;
+    height: 200rem;
+  }
+  &__right {
+    background-color: $color-primary;
+    width: 60%;
+    @media only screen and (max-width: 800px) {
+      width: 100%;
+      order: -1;
+    }
+    @media only screen and (max-width: 770px) {
+      width: 100%;
+      order: -1;
+      margin-top: 8rem;
+    }
+  }
+
+  &__heading {
+    margin-top: 5rem;
+    font-size: 3rem;
+    text-transform: uppercase;
+  }
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    @media only screen and (max-width: 980px) {
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+
+    @media only screen and (max-width: 800px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: baseline;
+      margin-bottom: 2rem;
+    }
+  }
+  &__telefon {
+    @include magic-border(3px, $font-color-effects-2, 0.3s, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $font-color-effects-4;
+    width: 28rem;
+    height: 36rem;
+    @media only screen and (max-width: 980px) {
+      height: 26rem;
+    }
+  }
+  &__email {
+    @include magic-border(3px, $font-color-effects-2, 0.3s, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $font-color-effects-4;
+    width: 28rem;
+    height: 36rem;
+    margin-left: 2rem;
+    @media only screen and (max-width: 980px) {
+      height: 26rem;
+      margin-left: 0;
+      margin-top: 2rem;
+    }
+  }
+  &__adresa {
+    @include magic-border(3px, $font-color-effects-2, 0.3s, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $font-color-effects-4;
+    width: 28rem;
+    height: 36rem;
+    margin-left: 2rem;
+    @media only screen and (max-width: 980px) {
+      height: 26rem;
+      margin-left: 0;
+      margin-top: 2rem;
+    }
+  }
+
+  &__adresa:hover > &__icon {
+    fill: $font-color-effects-2;
+  }
+  &__email:hover > &__icon {
+    fill: $font-color-effects-2;
+  }
+  &__telefon:hover > &__icon {
+    fill: $font-color-effects-2;
+  }
+
+  &__icon {
+    margin-bottom: 5rem;
+    fill: $font-color-effects-4;
+    width: 7rem;
+    height: 7rem;
+    transition: all 0.4s;
+  }
+  &__paragraph {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+  }
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+}
+
+.mapouter {
+  width: 40%;
+
+  @media only screen and (max-width: 800px) {
+    width: 100%;
+    height: 100rem;
+  }
+}

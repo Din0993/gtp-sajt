@@ -1,0 +1,319 @@
+.navigation {
+  display: flex;
+  margin: 0;
+  padding: 0 8rem;
+  background-color: $color-primary;
+  border-bottom: 1px solid $font-color-effects-3;
+  padding-top: 0.3rem;
+  @media only screen and (max-width: 770px) {
+    position: fixed;
+    z-index: 213123;
+    width: 100%;
+  }
+
+  &__list {
+    display: flex;
+    list-style: none;
+    font-size: 2rem;
+    align-items: center;
+    &__item {
+      margin-left: 5rem;
+    }
+    @media only screen and (max-width: 1110px) {
+      font-size: 1.8rem;
+    }
+    @media only screen and (max-width: 1060px) {
+      font-size: 1.6rem;
+    }
+    @media only screen and (max-width: 1011px) {
+      font-size: 1.4rem;
+    }
+    @media only screen and (max-width: 970px) {
+      height: 8rem;
+      margin: 0 auto;
+    }
+    @media only screen and (max-width: 770px) {
+      display: none;
+    }
+    &__kontakt {
+      display: flex;
+      list-style: none;
+      font-size: 2rem;
+      align-items: center;
+      @media only screen and (max-width: 720px) {
+        font-size: 1.8rem;
+      }
+      @media only screen and (max-width: 670px) {
+        display: none;
+      }
+    }
+  }
+
+  &__link:link,
+  &__link:visited {
+    font-weight: 800;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $color-secondary;
+    display: block;
+    transition: all 0.4s;
+  }
+
+  &__link:hover,
+  &__link:active {
+    color: $font-color-effects-4;
+    transform: translateY(-3px);
+  }
+
+  &__logo {
+    display: inline-block;
+    height: 8rem;
+    width: 24rem;
+    margin-right: auto;
+    @media only screen and (max-width: 970px) {
+      display: none;
+    }
+    @media only screen and (max-width: 770px) {
+      display: block;
+      z-index: 15001;
+    }
+    &__kontakt {
+      display: inline-block;
+      height: 8rem;
+      width: 24rem;
+      margin-right: auto;
+      z-index: 15001;
+    }
+  }
+
+  &__menu {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    height: 3px;
+    width: 4rem;
+    background-color: $color-secondary;
+    align-self: center;
+    justify-self: end;
+    position: relative;
+    transition: visibility 0s opacity 1s;
+    cursor: pointer;
+    z-index: 15001;
+    @media only screen and (max-width: 770px) {
+      display: block;
+      visibility: visible;
+      opacity: 1;
+      margin-right: -4rem;
+      z-index: 15001;
+    }
+    &__container {
+      display: none;
+      visibility: hidden;
+      opacity: 0;
+      align-self: center;
+      justify-self: end;
+      background-color: transparent;
+      height: 2.5rem;
+      width: 4rem;
+      cursor: pointer;
+      z-index: 15001;
+      @media only screen and (max-width: 670px) {
+        display: block;
+        visibility: visible;
+        opacity: 1;
+        margin-right: -4rem;
+        z-index: 15001;
+      }
+      &__main {
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+        align-self: center;
+        justify-self: end;
+        background-color: transparent;
+        height: 2.5rem;
+        width: 4rem;
+        cursor: pointer;
+        z-index: 15001;
+        @media only screen and (max-width: 770px) {
+          display: block;
+          visibility: visible;
+          opacity: 1;
+          margin-right: -4rem;
+          z-index: 15001;
+        }
+      }
+    }
+    &__kontakt {
+      display: none;
+      visibility: hidden;
+      opacity: 0;
+      height: 3px;
+      width: 4rem;
+      background-color: $color-secondary;
+      align-self: center;
+      justify-self: end;
+      position: relative;
+      transition: visibility 0s opacity 1s;
+
+      @media only screen and (max-width: 670px) {
+        display: block;
+        visibility: visible;
+        opacity: 1;
+        margin-right: -4rem;
+      }
+      &::before {
+        content: "";
+        position: relative;
+        display: block;
+        height: 3px;
+        width: 4rem;
+        background-color: $color-secondary;
+        top: 1rem;
+      }
+      &::after {
+        content: "";
+        position: relative;
+        display: block;
+        height: 3px;
+        width: 4rem;
+        background-color: $color-secondary;
+        top: 1.7rem;
+      }
+    }
+
+    &::before {
+      content: "";
+      position: relative;
+      display: block;
+      height: 3px;
+      width: 4rem;
+      background-color: $color-secondary;
+      top: 1rem;
+    }
+    &::after {
+      content: "";
+      position: relative;
+      display: block;
+      height: 3px;
+      width: 4rem;
+      background-color: $color-secondary;
+      top: 1.7rem;
+    }
+  }
+
+  // &__hidden {
+  //   display: none;
+  //   visibility: hidden;
+  //   opacity: 0;
+  // }
+}
+
+.active {
+  position: fixed;
+  z-index: 213123;
+  width: 100%;
+}
+
+.fixed {
+  position: fixed;
+  background-color: rgba($color-primary, $alpha: 0.9);
+  box-shadow: 2rem 0 1rem 0px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  z-index: 1111111;
+  transition: all 0.4s;
+  &-projekat {
+    position: fixed;
+    top: 0;
+    background-color: rgba($color-primary, $alpha: 0.9);
+    z-index: 111111;
+    width: 100%;
+  }
+  &-projekti {
+    position: fixed;
+    top: 0;
+    background-color: rgba($color-primary, $alpha: 0.9);
+    z-index: 1111111;
+    width: 100%;
+  }
+}
+
+// .navigation.fixed ul li img {
+//   height: 36px;
+// }
+// .navigation.fixed ul li a {
+//   font-size: 14px;
+// }
+
+.sidebar {
+  position: fixed;
+  opacity: 0;
+  width: 0;
+  height: 100vh;
+  // opacity: 0;
+  top: 0;
+  left: 0;
+  z-index: 15000;
+  transition: all 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+  background-color: $color-secondary;
+  @media only screen and (min-width: 770px) {
+    display: none;
+  }
+
+  &__list {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    text-align: center;
+  }
+  &__item {
+    margin: 1rem;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      display: inline-block;
+      font-size: 3rem;
+      font-weight: 300;
+      padding: 1rem 2rem;
+      color: $color-primary;
+      text-decoration: none;
+      text-transform: uppercase;
+      background-image: linear-gradient(
+        120deg,
+        transparent 0%,
+        transparent 50%,
+        $font-color-effects-3 50%
+      );
+      background-size: 225%;
+      transition: all 0.4s;
+    }
+
+    &:hover,
+    &:active {
+      background-position: 100%;
+      color: $color-primary;
+      transform: translateX(1rem);
+    }
+  }
+}
+.invisible {
+  display: none;
+}
+
+.sremski-karlovci {
+  font-size: 8.4rem;
+  @media only screen and (max-width: 1065px) {
+    font-size: 4rem;
+  }
+  @media only screen and (max-width: 760px) {
+    font-size: 2.5rem;
+  }
+}
+.parkview-naslov {
+  font-size: 11.1rem;
+}

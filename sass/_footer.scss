@@ -1,0 +1,17 @@
+.footer {
+  background-color: $color-grey-light-1;
+  padding-top: 3rem;
+
+  & > p {
+    text-align: center;
+    font-size: 1.6rem;
+    padding-bottom: 3rem;
+  }
+}
+
+.line {
+  margin: 5rem 0;
+  height: 1px;
+  background-color: $font-color-effects-3;
+  width: 100%;
+}

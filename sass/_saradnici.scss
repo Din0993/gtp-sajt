@@ -1,0 +1,55 @@
+.saradnici {
+  background-color: $color-grey-light-1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0;
+
+  &__heading {
+    font-size: 5rem;
+    transition: all 0.4s;
+    margin-bottom: 7rem;
+    &:hover {
+      color: $font-color-effects-3;
+    }
+  }
+
+  &__slider {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__logo {
+    // filter: grayscale(100%);
+    opacity: 0.3;
+    transition: all 0.3s;
+    margin-left: 4rem;
+    &--maxima {
+      width: 20rem;
+      height: 4rem;
+    }
+    &--kopra {
+      width: 15rem;
+    }
+    &--strabag {
+      transform: translateY(-5px);
+    }
+    &:hover {
+      // filter: grayscale(0);
+      opacity: 1;
+    }
+  }
+
+  &__line {
+    margin: 0;
+    height: 1px;
+    background-color: $font-color-effects-3;
+  }
+}

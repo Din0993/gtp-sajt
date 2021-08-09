@@ -269,6 +269,50 @@ button:focus {
   }
 }
 
+@keyframes fade2 {
+  0% {
+    left: 300rem;
+  }
+
+  100% {
+    left: 182rem;
+  }
+}
+
 .fancybox-button:hover {
   background-color: black;
+}
+
+.return-to-top-btn {
+  display: none;
+  position: fixed;
+  width: 4.5rem;
+  height: 4.5rem;
+  background-color: $color-secondary;
+  border-radius: 50%;
+  left: 300rem;
+  bottom: 4rem;
+  opacity: 0;
+}
+
+.shown-return-btn {
+  display: block;
+  left: 182rem;
+  animation-name: fade2;
+  animation-duration: 1.5s;
+  opacity: 1;
+  transition: all 0.4s;
+
+  &:hover {
+    background-color: $font-color-effects-3;
+  }
+}
+
+.fa-arrow-up {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  font-size: 3rem;
+  color: $color-primary;
 }

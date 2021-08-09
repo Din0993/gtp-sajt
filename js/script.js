@@ -75,12 +75,23 @@ const changeSlide = (direction) => {
 changeSlide("up");
 
 oNama.addEventListener("click", clickHandler);
-delatnost.addEventListener("click", clickHandler);
+delatnost.addEventListener("click", clickHandler2);
 
 function clickHandler(e) {
   e.preventDefault();
   const href = this.getAttribute("href");
-  const offsetTop = document.querySelector(href).offsetTop;
+  const offsetTop = document.querySelector(href).offsetTop - 170;
+
+  scroll({
+    top: offsetTop,
+    behavior: "smooth",
+  });
+}
+
+function clickHandler2(e) {
+  e.preventDefault();
+  const href = this.getAttribute("href");
+  const offsetTop = document.querySelector(href).offsetTop - 85;
 
   scroll({
     top: offsetTop,
@@ -98,13 +109,20 @@ function clickHandler(e) {
 
 // window.addEventListener("scroll", fixedNav);
 
+const returnToTop = document.querySelector(".return-to-top-btn");
+
 const navTop = navigation.getBoundingClientRect().height;
 const header = document.querySelector(".header");
 
 const stickyNav = function (entries) {
   const [entry] = entries;
-  if (!entry.isIntersecting) navigation.classList.add("fixed");
-  else navigation.classList.remove("fixed");
+  if (!entry.isIntersecting) {
+    navigation.classList.add("fixed");
+    returnToTop.classList.add("shown-return-btn");
+  } else {
+    navigation.classList.remove("fixed");
+    returnToTop.classList.remove("shown-return-btn");
+  }
 };
 
 const headerObserver = new IntersectionObserver(stickyNav, {

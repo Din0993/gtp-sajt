@@ -503,8 +503,43 @@ button:focus {
   to {
     opacity: 1; } }
 
+@keyframes fade2 {
+  0% {
+    left: 300rem; }
+  100% {
+    left: 182rem; } }
+
 .fancybox-button:hover {
   background-color: black; }
+
+.return-to-top-btn {
+  display: none;
+  position: fixed;
+  width: 4.5rem;
+  height: 4.5rem;
+  background-color: #212529;
+  border-radius: 50%;
+  left: 300rem;
+  bottom: 4rem;
+  opacity: 0; }
+
+.shown-return-btn {
+  display: block;
+  left: 182rem;
+  animation-name: fade2;
+  animation-duration: 1.5s;
+  opacity: 1;
+  transition: all 0.4s; }
+  .shown-return-btn:hover {
+    background-color: #ba181b; }
+
+.fa-arrow-up {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  font-size: 3rem;
+  color: #f8f8f8; }
 
 .heading-1, .heading-2, .heading-3 {
   font-family: "Nunito", sans-serif;

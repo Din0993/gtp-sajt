@@ -551,6 +551,15 @@ button:focus {
   .up-button:hover > .fa-arrow-up2 {
     color: #ba181b; }
 
+.fancybox-infobar {
+  margin-top: 8rem; }
+
+.fancybox-toolbar {
+  margin-top: 8rem; }
+
+.fancybox-thumbs {
+  margin-top: 8rem; }
+
 .heading-1, .heading-2, .heading-3 {
   font-family: "Nunito", sans-serif;
   font-weight: 400; }

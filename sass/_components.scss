@@ -330,3 +330,15 @@ button:focus {
     color: #ba181b;
   }
 }
+
+.fancybox {
+  &-infobar {
+    margin-top: 8rem;
+  }
+  &-toolbar {
+    margin-top: 8rem;
+  }
+  &-thumbs {
+    margin-top: 8rem;
+  }
+}

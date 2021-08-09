@@ -574,6 +574,8 @@ button:focus {
   font-size: 2.5rem;
   color: #495057;
   font-weight: 700; }
+  .heading-2--light {
+    color: #f8f8f8; }
 
 .heading-3 {
   text-align: center;
@@ -601,62 +603,12 @@ button:focus {
   background-color: #ba181b;
   width: 100%; }
 
-.container {
-  display: grid;
-  grid-template-columns: minmax(3rem, 1fr) repeat(8, minmax(min-content, 13rem)) minmax(3rem, 1fr); }
-
 .delatnost {
   background-color: #e9ecef;
   padding-bottom: 2rem; }
   @media only screen and (max-width: 830px) {
     .delatnost {
       margin-top: -10rem; } }
-  .delatnost__container {
-    grid-column: 2/10;
-    margin: 7rem 0;
-    display: grid;
-    gap: 6rem;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    margin-top: 15rem; }
-    .delatnost__container__item {
-      position: relative;
-      padding-top: 1rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      background-color: rgba(46, 37, 0, 0.123);
-      transition: all 0.3s;
-      border: 1px solid black; }
-      .delatnost__container__item:before {
-        content: "";
-        position: absolute;
-        width: calc(100% + 8px);
-        height: calc(100% + 8px);
-        top: calc(4px/ -1);
-        left: calc(4px/ -1);
-        background: linear-gradient(to right, #d10000 0%, #d10000 100%), linear-gradient(to top, #d10000 50%, transparent 50%), linear-gradient(to top, #d10000 50%, transparent 50%), linear-gradient(to right, #d10000 0%, #d10000 100%), linear-gradient(to left, #d10000 0%, #d10000 100%);
-        background-size: 100% 4px, 4px 200%, 4px 200%, 0% 4px, 0% 4px;
-        background-position: 50% 100%, 0% 0%, 100% 0%, 100% 0%, 0% 0%;
-        background-repeat: no-repeat, no-repeat;
-        transition: transform 0.3s ease-in-out, background-position 0.3s ease-in-out, background-size 0.3s ease-in-out;
-        transform: scaleX(0) rotate(180deg);
-        transition-delay: 0.6s, 0.3s, 0s; }
-      .delatnost__container__item:hover:before {
-        background-size: 200% 4px, 4px 400%, 4px 400%, 55% 4px, 55% 4px;
-        background-position: 50% 100%, 0% 100%, 100% 100%, 100% 0%, 0% 0%;
-        transform: scaleX(1) rotate(180deg);
-        transition-delay: 0s, 0.3s, 0.6s; }
-    .delatnost__container__icon {
-      align-self: center;
-      width: 4.5rem;
-      height: 4.5rem;
-      transition: all 0.4s; }
-    .delatnost__container__text {
-      margin-top: 1.5rem;
-      text-align: center;
-      font-size: 1.6rem;
-      padding-bottom: 3rem; }
   .delatnost__naziv {
     padding-top: 3rem;
     text-align: center;
@@ -674,17 +626,146 @@ button:focus {
     margin-top: 0;
     background-color: #ba181b; }
 
-.delatnost__container__item:hover > .delatnost__naziv {
-  color: #a4161a; }
-
-.delatnost__container__item:hover > .delatnost__container__icon {
-  fill: #ba181b; }
-
 .sticky-nav-delatnost-margin {
   margin-top: 22rem; }
   @media only screen and (max-width: 830px) {
     .sticky-nav-delatnost-margin {
       margin-top: 8rem; } }
+
+.delatnosti {
+  width: 100%;
+  height: 80rem; }
+  .delatnosti__flex-container {
+    display: flex;
+    height: 100%;
+    overflow: hidden; }
+
+.delatnost-1 {
+  position: relative;
+  width: 25%;
+  height: 100%;
+  overflow: hidden; }
+  .delatnost-1__slika {
+    position: absolute;
+    filter: brightness(40%);
+    width: auto;
+    height: auto;
+    left: -8rem;
+    top: -5rem;
+    transition: filter 1s, transform 10s; }
+    .delatnost-1__slika:hover {
+      filter: brightness(75%);
+      transform: scale(1.3); }
+  .delatnost-1__naziv-i-opis {
+    position: absolute;
+    left: 3rem;
+    top: 57rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column; }
+  .delatnost-1__heading {
+    font-weight: 800;
+    font-size: 3.2rem;
+    line-height: 1.1;
+    width: 70%; }
+  .delatnost-1__opis {
+    color: #f8f8f8;
+    font-size: 1.7rem;
+    width: 70%;
+    font-weight: 500; }
+
+.delatnost-2 {
+  position: relative;
+  width: 25%;
+  height: 100%;
+  overflow: hidden; }
+  .delatnost-2__slika {
+    filter: brightness(40%);
+    width: 100%;
+    height: 100%;
+    transition: filter 1s, transform 10s; }
+    .delatnost-2__slika:hover {
+      filter: brightness(75%);
+      transform: scale(1.3); }
+  .delatnost-2__naziv-i-opis {
+    position: absolute;
+    left: 3rem;
+    top: 57rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column; }
+  .delatnost-2__heading {
+    font-weight: 800;
+    font-size: 3.2rem;
+    line-height: 1.1;
+    width: 70%; }
+  .delatnost-2__opis {
+    color: #f8f8f8;
+    font-size: 1.7rem;
+    width: 70%;
+    font-weight: 500; }
+
+.delatnost-3 {
+  position: relative;
+  width: 25%;
+  height: 100%;
+  overflow: hidden; }
+  .delatnost-3__slika {
+    filter: brightness(40%);
+    width: 100%;
+    height: 100%;
+    transition: filter 1s, transform 10s; }
+    .delatnost-3__slika:hover {
+      filter: brightness(75%);
+      transform: scale(1.3); }
+  .delatnost-3__naziv-i-opis {
+    position: absolute;
+    left: 3rem;
+    top: 57rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column; }
+  .delatnost-3__heading {
+    font-weight: 800;
+    font-size: 3.2rem;
+    line-height: 1.1;
+    width: 70%; }
+  .delatnost-3__opis {
+    color: #f8f8f8;
+    font-size: 1.7rem;
+    width: 70%;
+    font-weight: 500; }
+
+.delatnost-4 {
+  position: relative;
+  width: 25%;
+  height: 100%;
+  overflow: hidden; }
+  .delatnost-4__slika {
+    filter: brightness(40%);
+    width: 100%;
+    height: 100%;
+    transition: filter 1s, transform 10s; }
+    .delatnost-4__slika:hover {
+      filter: brightness(75%);
+      transform: scale(1.3); }
+  .delatnost-4__naziv-i-opis {
+    position: absolute;
+    left: 3rem;
+    top: 57rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column; }
+  .delatnost-4__heading {
+    font-weight: 800;
+    font-size: 3.2rem;
+    line-height: 1.1;
+    width: 70%; }
+  .delatnost-4__opis {
+    color: #f8f8f8;
+    font-size: 1.7rem;
+    width: 70%;
+    font-weight: 500; }
 
 .gallery {
   background-color: #e9ecef;
@@ -786,7 +867,8 @@ button:focus {
   .saradnici__heading {
     font-size: 5rem;
     transition: all 0.4s;
-    margin-bottom: 7rem; }
+    margin-bottom: 7rem;
+    padding-top: 7rem; }
     .saradnici__heading:hover {
       color: #ba181b; }
   .saradnici__slider {

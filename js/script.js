@@ -91,7 +91,7 @@ function clickHandler(e) {
 function clickHandler2(e) {
   e.preventDefault();
   const href = this.getAttribute("href");
-  const offsetTop = document.querySelector(href).offsetTop - 85;
+  const offsetTop = document.querySelector(href).offsetTop - 170;
 
   scroll({
     top: offsetTop,

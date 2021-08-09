@@ -315,4 +315,18 @@ button:focus {
   transform: translate(50%, -50%);
   font-size: 3rem;
   color: $color-primary;
+
+  &2 {
+    color: #aaa;
+    font-size: 1.6rem;
+    transition: all 0.4s;
+  }
+}
+
+.up-button {
+  height: 4.6rem;
+  width: 4.4rem;
+  &:hover > .fa-arrow-up2 {
+    color: #ba181b;
+  }
 }

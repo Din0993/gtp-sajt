@@ -540,6 +540,16 @@ button:focus {
   transform: translate(50%, -50%);
   font-size: 3rem;
   color: #f8f8f8; }
+  .fa-arrow-up2 {
+    color: #aaa;
+    font-size: 1.6rem;
+    transition: all 0.4s; }
+
+.up-button {
+  height: 4.6rem;
+  width: 4.4rem; }
+  .up-button:hover > .fa-arrow-up2 {
+    color: #ba181b; }
 
 .heading-1, .heading-2, .heading-3 {
   font-family: "Nunito", sans-serif;

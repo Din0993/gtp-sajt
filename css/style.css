@@ -121,7 +121,7 @@ body {
         .navigation__list__kontakt {
           display: none; } }
   .navigation__link:link, .navigation__link:visited {
-    font-weight: 800;
+    font-weight: 600;
     text-decoration: none;
     color: #212529;
     padding: 1rem 0.6rem;

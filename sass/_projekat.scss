@@ -63,12 +63,29 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    width: 100%;
   }
 
   &__slika {
     margin: 2rem;
     width: 55rem;
     height: 53rem;
+    @media only screen and (max-width: 610px) {
+      width: 45rem;
+      height: 40rem;
+    }
+    @media only screen and (max-width: 500px) {
+      width: 40rem;
+      height: 35rem;
+    }
+    @media only screen and (max-width: 450px) {
+      width: 37rem;
+      height: 31rem;
+    }
+    @media only screen and (max-width: 400px) {
+      width: 32rem;
+      height: 25rem;
+    }
   }
 }
 

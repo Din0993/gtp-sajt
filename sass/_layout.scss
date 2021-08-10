@@ -5,32 +5,58 @@
   background-color: $color-primary;
   border-bottom: 1px solid $font-color-effects-3;
   padding-top: 0.3rem;
+  @media only screen and (max-width: 1070px) {
+    padding-right: 4rem;
+  }
+  @media only screen and (max-width: 1030px) {
+    padding-right: 2rem;
+  }
+  @media only screen and (max-width: 1011px) {
+    padding-right: 1rem;
+  }
+  @media only screen and (max-width: 996px) {
+    padding-right: 0;
+  }
+  @media only screen and (max-width: 970px) {
+    padding: 0 8rem;
+  }
   @media only screen and (max-width: 770px) {
     position: fixed;
     z-index: 213123;
     width: 100%;
   }
 
+  @media only screen and (max-width: 450px) {
+    padding-left: 2rem;
+    padding-right: 5rem;
+  }
+
   &__list {
     display: flex;
     list-style: none;
-    font-size: 2rem;
+    font-size: 1.7rem;
     align-items: center;
     &__item {
       margin-left: 5rem;
     }
     @media only screen and (max-width: 1110px) {
-      font-size: 1.8rem;
+      font-size: 1.5rem;
     }
-    @media only screen and (max-width: 1060px) {
-      font-size: 1.6rem;
+    @media only screen and (max-width: 1090px) {
+      font-size: 1.4rem;
     }
     @media only screen and (max-width: 1011px) {
       font-size: 1.4rem;
     }
+    @media only screen and (max-width: 985px) {
+      font-size: 1.3rem;
+    }
     @media only screen and (max-width: 970px) {
       height: 8rem;
       margin: 0 auto;
+    }
+    @media only screen and (max-width: 800px) {
+      font-size: 1.17rem;
     }
     @media only screen and (max-width: 770px) {
       display: none;
@@ -38,10 +64,27 @@
     &__kontakt {
       display: flex;
       list-style: none;
-      font-size: 2rem;
+      font-size: 1.7rem;
       align-items: center;
-      @media only screen and (max-width: 720px) {
-        font-size: 1.8rem;
+      @media only screen and (max-width: 970px) {
+        margin: auto;
+      }
+      @media only screen and (max-width: 850px) {
+        font-size: 1.5rem;
+      }
+      @media only screen and (max-width: 780px) {
+        font-size: 1.3rem;
+      }
+      @media only screen and (max-width: 740px) {
+        font-size: 1.19rem;
+        margin-left: -2rem;
+        padding-left: -2rem;
+      }
+      @media only screen and (max-width: 695px) {
+        font-size: 1.09rem;
+      }
+      @media only screen and (max-width: 677px) {
+        font-size: 1.03rem;
       }
       @media only screen and (max-width: 670px) {
         display: none;
@@ -53,16 +96,26 @@
   &__link:visited {
     font-weight: 800;
     text-decoration: none;
-    text-transform: uppercase;
     color: $color-secondary;
-    display: block;
+    padding: 1rem 0.6rem;
+    text-transform: uppercase;
+    background-image: linear-gradient(
+      120deg,
+      transparent 0%,
+      transparent 50%,
+      $font-color-effects-3 50%
+    );
+    background-size: 235%;
     transition: all 0.4s;
   }
 
   &__link:hover,
   &__link:active {
-    color: $font-color-effects-4;
-    transform: translateY(-3px);
+    // color: $font-color-effects-4;
+    // transform: translateY(-3px);
+    background-position: 100%;
+    color: $color-primary;
+    transform: translateX(1rem);
   }
 
   &__logo {
@@ -83,6 +136,13 @@
       width: 24rem;
       margin-right: auto;
       z-index: 15001;
+
+      @media only screen and (max-width: 670px) {
+        margin-left: 2rem;
+      }
+      @media only screen and (max-width: 970px) {
+        margin-top: 0.1rem;
+      }
     }
   }
 
@@ -121,7 +181,7 @@
         display: block;
         visibility: visible;
         opacity: 1;
-        margin-right: -4rem;
+        margin-right: 0;
         z-index: 15001;
       }
       &__main {
@@ -223,6 +283,9 @@
   z-index: 1111111;
   transition: all 0.4s;
   &-projekat {
+    overflow: hidden;
+    padding-left: 1rem;
+    padding-right: 1rem;
     position: fixed;
     top: 0;
     background-color: rgba($color-primary, $alpha: 0.9);
@@ -230,6 +293,9 @@
     width: 100%;
   }
   &-projekti {
+    overflow: hidden;
+    padding-left: 1rem;
+    padding-right: 1rem;
     position: fixed;
     top: 0;
     background-color: rgba($color-primary, $alpha: 0.9);

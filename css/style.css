@@ -342,6 +342,9 @@ body {
 
 .parkview-naslov {
   font-size: 11.1rem; }
+  @media only screen and (max-width: 1065px) {
+    .parkview-naslov {
+      font-size: 4rem; } }
 
 .slider-container {
   position: relative;
@@ -642,6 +645,9 @@ button:focus {
 
 .paragraph-1 {
   font-size: 1.5rem; }
+  .paragraph-1-galerija-projekta {
+    font-size: 4rem;
+    font-weight: 700; }
 
 .paragraph-2 {
   font-size: 1.3rem; }
@@ -936,6 +942,10 @@ button:focus {
     margin-left: 2rem;
     margin-bottom: 2rem;
     width: 58rem; }
+    @media only screen and (max-width: 1250px) {
+      .projekti__item {
+        margin-left: 0;
+        width: 60rem; } }
     .projekti__item__link:link, .projekti__item__link:visited {
       font-weight: 400;
       text-decoration: none;
@@ -1032,11 +1042,9 @@ button:focus {
     text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191, 1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191, 1px 7px 1px #919191, 1px 8px 1px #919191, 1px 9px 1px #919191, 1px 10px 1px #919191, 1px 18px 6px rgba(16, 16, 16, 0.4), 1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2), 1px 30px 60px rgba(16, 16, 16, 0.4); }
 
 .projekat__informacije {
-  margin-top: 4rem;
-  margin-left: 5rem; }
+  margin: 8rem 0; }
   .projekat__informacije > p {
-    margin: 2rem 0;
-    margin-left: 10rem; }
+    text-align: center; }
 
 .projekat__galerija {
   display: flex;

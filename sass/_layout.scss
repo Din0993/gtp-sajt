@@ -382,4 +382,7 @@
 }
 .parkview-naslov {
   font-size: 11.1rem;
+  @media only screen and (max-width: 1065px) {
+    font-size: 4rem;
+  }
 }

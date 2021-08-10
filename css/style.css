@@ -92,8 +92,7 @@ body {
       list-style: none;
       font-size: 1.7rem;
       align-items: center;
-      margin-top: 0.8rem;
-      margin-right: 8rem; }
+      margin-top: 0.8rem; }
       @media only screen and (max-width: 970px) {
         .navigation__list__kontakt {
           margin: auto; } }
@@ -274,22 +273,30 @@ body {
   transition: all 0.4s; }
   .fixed-projekat {
     overflow: hidden;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
     position: fixed;
     top: 0;
     background-color: rgba(248, 248, 248, 0.9);
     z-index: 111111;
     width: 100%; }
+    @media only screen and (max-width: 670px) {
+      .fixed-projekat {
+        padding-left: 1rem;
+        padding-right: 2rem; } }
   .fixed-projekti {
     overflow: hidden;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
     position: fixed;
     top: 0;
     background-color: rgba(248, 248, 248, 0.9);
     z-index: 1111111;
     width: 100%; }
+    @media only screen and (max-width: 670px) {
+      .fixed-projekti {
+        padding-left: 1rem;
+        padding-right: 2rem; } }
 
 .sidebar {
   position: fixed;

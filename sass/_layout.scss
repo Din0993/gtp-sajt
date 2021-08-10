@@ -25,10 +25,14 @@
     z-index: 213123;
     width: 100%;
   }
+  @media only screen and (max-width: 670px) {
+    padding-left: 2rem;
+    padding-right: 1rem;
+  }
 
   @media only screen and (max-width: 450px) {
     padding-left: 2rem;
-    padding-right: 5rem;
+    padding-right: 1rem;
   }
 
   &__list {
@@ -200,7 +204,7 @@
           display: block;
           visibility: visible;
           opacity: 1;
-          margin-right: -4rem;
+          margin-right: 0;
           z-index: 15001;
         }
       }

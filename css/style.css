@@ -54,10 +54,14 @@ body {
       position: fixed;
       z-index: 213123;
       width: 100%; } }
+  @media only screen and (max-width: 670px) {
+    .navigation {
+      padding-left: 2rem;
+      padding-right: 1rem; } }
   @media only screen and (max-width: 450px) {
     .navigation {
       padding-left: 2rem;
-      padding-right: 5rem; } }
+      padding-right: 1rem; } }
   .navigation__list {
     display: flex;
     list-style: none;
@@ -207,7 +211,7 @@ body {
             display: block;
             visibility: visible;
             opacity: 1;
-            margin-right: -4rem;
+            margin-right: 0;
             z-index: 15001; } }
     .navigation__menu__kontakt {
       display: none;

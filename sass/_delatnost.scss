@@ -128,7 +128,7 @@
     height: 160rem;
   }
   @media only screen and (max-width: 500px) {
-    height: 280rem;
+    height: 2802px;
   }
   &__flex-container {
     display: flex;
@@ -148,10 +148,12 @@
   @media only screen and (max-width: 950px) {
     width: 50%;
     height: 50%;
+    border-bottom: 1px solid $font-color-effects-2;
   }
   @media only screen and (max-width: 500px) {
     width: 100%;
     height: 25%;
+    border-bottom: 1px solid $font-color-effects-2;
   }
   &__slika {
     position: absolute;
@@ -196,10 +198,12 @@
   @media only screen and (max-width: 950px) {
     width: 50%;
     height: 50%;
+    border-bottom: 1px solid $font-color-effects-2;
   }
   @media only screen and (max-width: 500px) {
     width: 100%;
     height: 25%;
+    border-bottom: 1px solid $font-color-effects-2;
   }
   &__slika {
     filter: brightness(40%);
@@ -245,6 +249,7 @@
   @media only screen and (max-width: 500px) {
     width: 100%;
     height: 25%;
+    border-bottom: 1px solid $font-color-effects-2;
   }
   &__slika {
     filter: brightness(40%);

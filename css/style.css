@@ -716,7 +716,7 @@ button:focus {
       height: 160rem; } }
   @media only screen and (max-width: 500px) {
     .delatnosti {
-      height: 280rem; } }
+      height: 2802px; } }
   .delatnosti__flex-container {
     display: flex;
     height: 100%;
@@ -733,11 +733,13 @@ button:focus {
   @media only screen and (max-width: 950px) {
     .delatnost-1 {
       width: 50%;
-      height: 50%; } }
+      height: 50%;
+      border-bottom: 1px solid #a4161a; } }
   @media only screen and (max-width: 500px) {
     .delatnost-1 {
       width: 100%;
-      height: 25%; } }
+      height: 25%;
+      border-bottom: 1px solid #a4161a; } }
   .delatnost-1__slika {
     position: absolute;
     filter: brightness(40%);
@@ -775,11 +777,13 @@ button:focus {
   @media only screen and (max-width: 950px) {
     .delatnost-2 {
       width: 50%;
-      height: 50%; } }
+      height: 50%;
+      border-bottom: 1px solid #a4161a; } }
   @media only screen and (max-width: 500px) {
     .delatnost-2 {
       width: 100%;
-      height: 25%; } }
+      height: 25%;
+      border-bottom: 1px solid #a4161a; } }
   .delatnost-2__slika {
     filter: brightness(40%);
     width: 100%;
@@ -818,7 +822,8 @@ button:focus {
   @media only screen and (max-width: 500px) {
     .delatnost-3 {
       width: 100%;
-      height: 25%; } }
+      height: 25%;
+      border-bottom: 1px solid #a4161a; } }
   .delatnost-3__slika {
     filter: brightness(40%);
     width: 100%;

@@ -692,16 +692,33 @@ button:focus {
 .delatnosti {
   width: 100%;
   height: 80rem; }
+  @media only screen and (max-width: 950px) {
+    .delatnosti {
+      height: 160rem; } }
+  @media only screen and (max-width: 500px) {
+    .delatnosti {
+      height: 280rem; } }
   .delatnosti__flex-container {
     display: flex;
     height: 100%;
     overflow: hidden; }
+    @media only screen and (max-width: 950px) {
+      .delatnosti__flex-container {
+        flex-wrap: wrap; } }
 
 .delatnost-1 {
   position: relative;
   width: 25%;
   height: 100%;
   overflow: hidden; }
+  @media only screen and (max-width: 950px) {
+    .delatnost-1 {
+      width: 50%;
+      height: 50%; } }
+  @media only screen and (max-width: 500px) {
+    .delatnost-1 {
+      width: 100%;
+      height: 25%; } }
   .delatnost-1__slika {
     position: absolute;
     filter: brightness(40%);
@@ -722,7 +739,7 @@ button:focus {
     flex-direction: column; }
   .delatnost-1__heading {
     font-weight: 800;
-    font-size: 3.2rem;
+    font-size: 3.16rem;
     line-height: 1.1;
     width: 70%; }
   .delatnost-1__opis {
@@ -736,6 +753,14 @@ button:focus {
   width: 25%;
   height: 100%;
   overflow: hidden; }
+  @media only screen and (max-width: 950px) {
+    .delatnost-2 {
+      width: 50%;
+      height: 50%; } }
+  @media only screen and (max-width: 500px) {
+    .delatnost-2 {
+      width: 100%;
+      height: 25%; } }
   .delatnost-2__slika {
     filter: brightness(40%);
     width: 100%;
@@ -767,6 +792,14 @@ button:focus {
   width: 25%;
   height: 100%;
   overflow: hidden; }
+  @media only screen and (max-width: 950px) {
+    .delatnost-3 {
+      width: 50%;
+      height: 50%; } }
+  @media only screen and (max-width: 500px) {
+    .delatnost-3 {
+      width: 100%;
+      height: 25%; } }
   .delatnost-3__slika {
     filter: brightness(40%);
     width: 100%;
@@ -798,6 +831,14 @@ button:focus {
   width: 25%;
   height: 100%;
   overflow: hidden; }
+  @media only screen and (max-width: 950px) {
+    .delatnost-4 {
+      width: 50%;
+      height: 50%; } }
+  @media only screen and (max-width: 500px) {
+    .delatnost-4 {
+      width: 100%;
+      height: 25%; } }
   .delatnost-4__slika {
     filter: brightness(40%);
     width: 100%;
@@ -815,12 +856,12 @@ button:focus {
     flex-direction: column; }
   .delatnost-4__heading {
     font-weight: 800;
-    font-size: 3.2rem;
+    font-size: 2.8rem;
     line-height: 1.1;
     width: 70%; }
   .delatnost-4__opis {
     color: #f8f8f8;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     width: 70%;
     font-weight: 500; }
 
@@ -922,6 +963,7 @@ button:focus {
   align-items: center;
   padding: 5rem 0; }
   .saradnici__heading {
+    text-align: center;
     font-size: 5rem;
     transition: all 0.4s;
     margin-bottom: 7rem;
